@@ -12,7 +12,7 @@ namespace HangMan
 
         public static void Run(object sender, EventArgs e)
         {
-            HangingGame game = new HangingGame();
+            HangManGame game = new HangManGame();
             game.Start();
             Console.Clear();
         }
