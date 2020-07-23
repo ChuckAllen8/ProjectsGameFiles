@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 
-namespace TheGameFloor
+namespace ConsoleEscape
 {
     public delegate void UpdateConsoleDelegate();
     public static class TheGameFloor

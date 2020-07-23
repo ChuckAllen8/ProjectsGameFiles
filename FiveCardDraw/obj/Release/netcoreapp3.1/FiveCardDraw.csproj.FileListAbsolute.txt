@@ -1,0 +1,13 @@
+C:\devbuild4\ConsoleEventSolution\FiveCardDraw\bin\Release\netcoreapp3.1\FiveCardDraw.exe
+C:\devbuild4\ConsoleEventSolution\FiveCardDraw\bin\Release\netcoreapp3.1\FiveCardDraw.deps.json
+C:\devbuild4\ConsoleEventSolution\FiveCardDraw\bin\Release\netcoreapp3.1\FiveCardDraw.runtimeconfig.json
+C:\devbuild4\ConsoleEventSolution\FiveCardDraw\bin\Release\netcoreapp3.1\FiveCardDraw.runtimeconfig.dev.json
+C:\devbuild4\ConsoleEventSolution\FiveCardDraw\bin\Release\netcoreapp3.1\FiveCardDraw.dll
+C:\devbuild4\ConsoleEventSolution\FiveCardDraw\bin\Release\netcoreapp3.1\FiveCardDraw.pdb
+C:\devbuild4\ConsoleEventSolution\FiveCardDraw\obj\Release\netcoreapp3.1\FiveCardDraw.csprojAssemblyReference.cache
+C:\devbuild4\ConsoleEventSolution\FiveCardDraw\obj\Release\netcoreapp3.1\FiveCardDraw.AssemblyInfoInputs.cache
+C:\devbuild4\ConsoleEventSolution\FiveCardDraw\obj\Release\netcoreapp3.1\FiveCardDraw.AssemblyInfo.cs
+C:\devbuild4\ConsoleEventSolution\FiveCardDraw\obj\Release\netcoreapp3.1\FiveCardDraw.csproj.CoreCompileInputs.cache
+C:\devbuild4\ConsoleEventSolution\FiveCardDraw\obj\Release\netcoreapp3.1\FiveCardDraw.dll
+C:\devbuild4\ConsoleEventSolution\FiveCardDraw\obj\Release\netcoreapp3.1\FiveCardDraw.pdb
+C:\devbuild4\ConsoleEventSolution\FiveCardDraw\obj\Release\netcoreapp3.1\FiveCardDraw.genruntimeconfig.cache

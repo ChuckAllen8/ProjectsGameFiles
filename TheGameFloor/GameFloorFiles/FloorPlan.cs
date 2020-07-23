@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using System.Text;
 
-namespace TheGameFloor
+namespace ConsoleEscape
 {
     public delegate void ObjectMovedDelegate(object sender, EventArgs args);
 

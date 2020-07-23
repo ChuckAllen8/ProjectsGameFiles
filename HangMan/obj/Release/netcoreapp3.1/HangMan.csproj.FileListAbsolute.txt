@@ -1,0 +1,13 @@
+C:\devbuild4\ConsoleEventSolution\HangMan\bin\Release\netcoreapp3.1\HangMan.exe
+C:\devbuild4\ConsoleEventSolution\HangMan\bin\Release\netcoreapp3.1\HangMan.deps.json
+C:\devbuild4\ConsoleEventSolution\HangMan\bin\Release\netcoreapp3.1\HangMan.runtimeconfig.json
+C:\devbuild4\ConsoleEventSolution\HangMan\bin\Release\netcoreapp3.1\HangMan.runtimeconfig.dev.json
+C:\devbuild4\ConsoleEventSolution\HangMan\bin\Release\netcoreapp3.1\HangMan.dll
+C:\devbuild4\ConsoleEventSolution\HangMan\bin\Release\netcoreapp3.1\HangMan.pdb
+C:\devbuild4\ConsoleEventSolution\HangMan\obj\Release\netcoreapp3.1\HangMan.csprojAssemblyReference.cache
+C:\devbuild4\ConsoleEventSolution\HangMan\obj\Release\netcoreapp3.1\HangMan.AssemblyInfoInputs.cache
+C:\devbuild4\ConsoleEventSolution\HangMan\obj\Release\netcoreapp3.1\HangMan.AssemblyInfo.cs
+C:\devbuild4\ConsoleEventSolution\HangMan\obj\Release\netcoreapp3.1\HangMan.csproj.CoreCompileInputs.cache
+C:\devbuild4\ConsoleEventSolution\HangMan\obj\Release\netcoreapp3.1\HangMan.dll
+C:\devbuild4\ConsoleEventSolution\HangMan\obj\Release\netcoreapp3.1\HangMan.pdb
+C:\devbuild4\ConsoleEventSolution\HangMan\obj\Release\netcoreapp3.1\HangMan.genruntimeconfig.cache

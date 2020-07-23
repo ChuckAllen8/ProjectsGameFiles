@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace TheGameFloor
+namespace ConsoleEscape
 {
     public delegate void GameRunDelegate(object sender, EventArgs e);
 

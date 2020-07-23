@@ -64,9 +64,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\devbuild4\\ConsoleEventSolution\\TheGameFloor\\TheGameFloor.csproj",
-      "projectName": "TheGameFloor",
-      "projectPath": "C:\\devbuild4\\ConsoleEventSolution\\TheGameFloor\\TheGameFloor.csproj",
+      "projectUniqueName": "C:\\devbuild4\\ConsoleEventSolution\\TheGameFloor\\ConsoleEscape.csproj",
+      "projectName": "ConsoleEscape",
+      "projectPath": "C:\\devbuild4\\ConsoleEventSolution\\TheGameFloor\\ConsoleEscape.csproj",
       "packagesPath": "C:\\Users\\callen8\\.nuget\\packages\\",
       "outputPath": "C:\\devbuild4\\ConsoleEventSolution\\TheGameFloor\\obj\\",
       "projectStyle": "PackageReference",

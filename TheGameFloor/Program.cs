@@ -1,4 +1,4 @@
-﻿namespace TheGameFloor
+﻿namespace ConsoleEscape
 {
     class Program
     {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace TheGameFloor
+namespace ConsoleEscape
 {
     public delegate void InputReceivedDelegate(object sender, EventArgs args);
     public class Player : FloorObject
