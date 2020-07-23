@@ -1,0 +1,126 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "FiveCardDraw/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/FiveCardDraw.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FiveCardDraw.dll": {}
+        }
+      },
+      "HangMan/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/HangMan.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HangMan.dll": {}
+        }
+      },
+      "RoShamBo/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/RoShamBo.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RoShamBo.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FiveCardDraw/1.0.0": {
+      "type": "project",
+      "path": "../FiveCardDraw/FiveCardDraw.csproj",
+      "msbuildProject": "../FiveCardDraw/FiveCardDraw.csproj"
+    },
+    "HangMan/1.0.0": {
+      "type": "project",
+      "path": "../HangMan/HangMan.csproj",
+      "msbuildProject": "../HangMan/HangMan.csproj"
+    },
+    "RoShamBo/1.0.0": {
+      "type": "project",
+      "path": "../RoShamBo/RoShamBo.csproj",
+      "msbuildProject": "../RoShamBo/RoShamBo.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "FiveCardDraw >= 1.0.0",
+      "HangMan >= 1.0.0",
+      "RoShamBo >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\callen8\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\devbuild4\\ConsoleEventSolution\\TheGameFloor\\TheGameFloor.csproj",
+      "projectName": "TheGameFloor",
+      "projectPath": "C:\\devbuild4\\ConsoleEventSolution\\TheGameFloor\\TheGameFloor.csproj",
+      "packagesPath": "C:\\Users\\callen8\\.nuget\\packages\\",
+      "outputPath": "C:\\devbuild4\\ConsoleEventSolution\\TheGameFloor\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\callen8\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "projectReferences": {
+            "C:\\devbuild4\\ConsoleEventSolution\\FiveCardDraw\\FiveCardDraw.csproj": {
+              "projectPath": "C:\\devbuild4\\ConsoleEventSolution\\FiveCardDraw\\FiveCardDraw.csproj"
+            },
+            "C:\\devbuild4\\ConsoleEventSolution\\HangMan\\HangMan.csproj": {
+              "projectPath": "C:\\devbuild4\\ConsoleEventSolution\\HangMan\\HangMan.csproj"
+            },
+            "C:\\devbuild4\\ConsoleEventSolution\\RoShamBo\\RoShamBo.csproj": {
+              "projectPath": "C:\\devbuild4\\ConsoleEventSolution\\RoShamBo\\RoShamBo.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
