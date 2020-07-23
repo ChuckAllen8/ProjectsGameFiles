@@ -84,6 +84,7 @@ namespace ConsoleEscape
             {
                 string[] args = reader.ReadLine().Split(",");
                 Player thisPlayer = new Player(int.Parse(args[1]), int.Parse(args[2]), char.Parse(args[0]));
+                thisPlayer.Movable = true;
                 //thisPlayer.InputReceived += AI.AI.Think;
                 addTo.AddPiece(thisPlayer);
             }

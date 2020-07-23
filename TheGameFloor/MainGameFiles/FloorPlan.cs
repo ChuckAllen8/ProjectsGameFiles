@@ -80,7 +80,7 @@ namespace ConsoleEscape
                 for (int column = 0; column < Columns; column++)
                 {
                     char toDraw = ' ';
-                    if (this[row, column] != null)
+                    if (this[row, column] != null && this[row, column].Visible)
                     {
                         toDraw = this[row, column].Symbol;
                     }
@@ -187,6 +187,20 @@ namespace ConsoleEscape
                 this[piece.X, piece.Y] = null;
                 this[newLocation.X, newLocation.Y] = piece;
                 piece.Location = newLocation;
+            }
+            else if (this[newLocation.X, newLocation.Y] != null && this[newLocation.X, newLocation.Y].Movable)
+            {
+                FloorObject movablePiece = (FloorObject) this[newLocation.X, newLocation.Y];
+                int tempX = movablePiece.X + (newLocation.X - piece.X);
+                int tempY = movablePiece.Y + (newLocation.Y - piece.Y);
+                if(tempX < floorPlan.GetLength(0) && tempY < floorPlan.GetLength(1) && !this.IsOccupied(tempX, tempY))
+                {
+                    this[piece.X, piece.Y] = null;
+                    this[newLocation.X, newLocation.Y] = piece;
+                    this[tempX, tempY] = movablePiece;
+                    movablePiece.Location = new Point(tempX, tempY);
+                    piece.Location = newLocation;
+                }
             }
 
             if (inputs.Contains(ConsoleKey.Enter))

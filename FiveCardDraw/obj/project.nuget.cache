@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dOfRJZEZJ3SCA5ZMxPfGgOGH0EHOtc2T6XpsO6gV/12KU1L3qsx6ji6Y3vxOPWnWJ9T7POLQPKffYj9EQGEvkw==",
+  "dgSpecHash": "zLMrLsosniEuR8LC9nEAK+U76zFkchBYXFrbWdm7Hz1oxqOfPeRaaezBRWIIiRwpUxO600R2HSP26eb4yjzziQ==",
   "success": true,
-  "projectFilePath": "C:\\devbuild4\\ConsoleEventSolution\\FiveCardDraw\\FiveCardDraw.csproj",
+  "projectFilePath": "C:\\devbuild4\\ConsoleEscape\\FiveCardDraw\\FiveCardDraw.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

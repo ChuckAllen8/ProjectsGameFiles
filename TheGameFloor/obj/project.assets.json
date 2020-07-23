@@ -64,11 +64,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\devbuild4\\ConsoleEventSolution\\TheGameFloor\\ConsoleEscape.csproj",
+      "projectUniqueName": "C:\\devbuild4\\ConsoleEscape\\TheGameFloor\\ConsoleEscape.csproj",
       "projectName": "ConsoleEscape",
-      "projectPath": "C:\\devbuild4\\ConsoleEventSolution\\TheGameFloor\\ConsoleEscape.csproj",
+      "projectPath": "C:\\devbuild4\\ConsoleEscape\\TheGameFloor\\ConsoleEscape.csproj",
       "packagesPath": "C:\\Users\\callen8\\.nuget\\packages\\",
-      "outputPath": "C:\\devbuild4\\ConsoleEventSolution\\TheGameFloor\\obj\\",
+      "outputPath": "C:\\devbuild4\\ConsoleEscape\\TheGameFloor\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\callen8\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -84,14 +84,14 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\devbuild4\\ConsoleEventSolution\\FiveCardDraw\\FiveCardDraw.csproj": {
-              "projectPath": "C:\\devbuild4\\ConsoleEventSolution\\FiveCardDraw\\FiveCardDraw.csproj"
+            "C:\\devbuild4\\ConsoleEscape\\FiveCardDraw\\FiveCardDraw.csproj": {
+              "projectPath": "C:\\devbuild4\\ConsoleEscape\\FiveCardDraw\\FiveCardDraw.csproj"
             },
-            "C:\\devbuild4\\ConsoleEventSolution\\HangMan\\HangMan.csproj": {
-              "projectPath": "C:\\devbuild4\\ConsoleEventSolution\\HangMan\\HangMan.csproj"
+            "C:\\devbuild4\\ConsoleEscape\\HangMan\\HangMan.csproj": {
+              "projectPath": "C:\\devbuild4\\ConsoleEscape\\HangMan\\HangMan.csproj"
             },
-            "C:\\devbuild4\\ConsoleEventSolution\\RoShamBo\\RoShamBo.csproj": {
-              "projectPath": "C:\\devbuild4\\ConsoleEventSolution\\RoShamBo\\RoShamBo.csproj"
+            "C:\\devbuild4\\ConsoleEscape\\RoShamBo\\RoShamBo.csproj": {
+              "projectPath": "C:\\devbuild4\\ConsoleEscape\\RoShamBo\\RoShamBo.csproj"
             }
           }
         }

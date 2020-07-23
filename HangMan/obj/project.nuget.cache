@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1ox+KLpI/KV0OsMnXoBpzJKAOCiGS/b9Ar0ScVoQOXnxKzPB7g+nvXkCmBgbRIoh6gceqmPVYDLf1isoGt0T6A==",
+  "dgSpecHash": "RKrlEOUnEtT/YXZe4GauQu2m4HE2lamSY4bJzTysKUPVSEMOeOkzxO4074vWeh7fQ6ce8ZOrb5SeLyhLSOU9aA==",
   "success": true,
-  "projectFilePath": "C:\\devbuild4\\ConsoleEventSolution\\HangMan\\HangMan.csproj",
+  "projectFilePath": "C:\\devbuild4\\ConsoleEscape\\HangMan\\HangMan.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

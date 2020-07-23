@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\devbuild4\\ConsoleEventSolution\\TheGameFloor\\ConsoleEscape.csproj": {}
+    "C:\\devbuild4\\ConsoleEscape\\TheGameFloor\\ConsoleEscape.csproj": {}
   },
   "projects": {
-    "C:\\devbuild4\\ConsoleEventSolution\\FiveCardDraw\\FiveCardDraw.csproj": {
+    "C:\\devbuild4\\ConsoleEscape\\FiveCardDraw\\FiveCardDraw.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\devbuild4\\ConsoleEventSolution\\FiveCardDraw\\FiveCardDraw.csproj",
+        "projectUniqueName": "C:\\devbuild4\\ConsoleEscape\\FiveCardDraw\\FiveCardDraw.csproj",
         "projectName": "FiveCardDraw",
-        "projectPath": "C:\\devbuild4\\ConsoleEventSolution\\FiveCardDraw\\FiveCardDraw.csproj",
+        "projectPath": "C:\\devbuild4\\ConsoleEscape\\FiveCardDraw\\FiveCardDraw.csproj",
         "packagesPath": "C:\\Users\\callen8\\.nuget\\packages\\",
-        "outputPath": "C:\\devbuild4\\ConsoleEventSolution\\FiveCardDraw\\obj\\",
+        "outputPath": "C:\\devbuild4\\ConsoleEscape\\FiveCardDraw\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\callen8\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -56,14 +56,14 @@
         }
       }
     },
-    "C:\\devbuild4\\ConsoleEventSolution\\HangMan\\HangMan.csproj": {
+    "C:\\devbuild4\\ConsoleEscape\\HangMan\\HangMan.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\devbuild4\\ConsoleEventSolution\\HangMan\\HangMan.csproj",
+        "projectUniqueName": "C:\\devbuild4\\ConsoleEscape\\HangMan\\HangMan.csproj",
         "projectName": "HangMan",
-        "projectPath": "C:\\devbuild4\\ConsoleEventSolution\\HangMan\\HangMan.csproj",
+        "projectPath": "C:\\devbuild4\\ConsoleEscape\\HangMan\\HangMan.csproj",
         "packagesPath": "C:\\Users\\callen8\\.nuget\\packages\\",
-        "outputPath": "C:\\devbuild4\\ConsoleEventSolution\\HangMan\\obj\\",
+        "outputPath": "C:\\devbuild4\\ConsoleEscape\\HangMan\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\callen8\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -108,14 +108,14 @@
         }
       }
     },
-    "C:\\devbuild4\\ConsoleEventSolution\\RoShamBo\\RoShamBo.csproj": {
+    "C:\\devbuild4\\ConsoleEscape\\RoShamBo\\RoShamBo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\devbuild4\\ConsoleEventSolution\\RoShamBo\\RoShamBo.csproj",
+        "projectUniqueName": "C:\\devbuild4\\ConsoleEscape\\RoShamBo\\RoShamBo.csproj",
         "projectName": "RoShamBo",
-        "projectPath": "C:\\devbuild4\\ConsoleEventSolution\\RoShamBo\\RoShamBo.csproj",
+        "projectPath": "C:\\devbuild4\\ConsoleEscape\\RoShamBo\\RoShamBo.csproj",
         "packagesPath": "C:\\Users\\callen8\\.nuget\\packages\\",
-        "outputPath": "C:\\devbuild4\\ConsoleEventSolution\\RoShamBo\\obj\\",
+        "outputPath": "C:\\devbuild4\\ConsoleEscape\\RoShamBo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\callen8\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -160,14 +160,14 @@
         }
       }
     },
-    "C:\\devbuild4\\ConsoleEventSolution\\TheGameFloor\\ConsoleEscape.csproj": {
+    "C:\\devbuild4\\ConsoleEscape\\TheGameFloor\\ConsoleEscape.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\devbuild4\\ConsoleEventSolution\\TheGameFloor\\ConsoleEscape.csproj",
+        "projectUniqueName": "C:\\devbuild4\\ConsoleEscape\\TheGameFloor\\ConsoleEscape.csproj",
         "projectName": "ConsoleEscape",
-        "projectPath": "C:\\devbuild4\\ConsoleEventSolution\\TheGameFloor\\ConsoleEscape.csproj",
+        "projectPath": "C:\\devbuild4\\ConsoleEscape\\TheGameFloor\\ConsoleEscape.csproj",
         "packagesPath": "C:\\Users\\callen8\\.nuget\\packages\\",
-        "outputPath": "C:\\devbuild4\\ConsoleEventSolution\\TheGameFloor\\obj\\",
+        "outputPath": "C:\\devbuild4\\ConsoleEscape\\TheGameFloor\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\callen8\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -183,14 +183,14 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\devbuild4\\ConsoleEventSolution\\FiveCardDraw\\FiveCardDraw.csproj": {
-                "projectPath": "C:\\devbuild4\\ConsoleEventSolution\\FiveCardDraw\\FiveCardDraw.csproj"
+              "C:\\devbuild4\\ConsoleEscape\\FiveCardDraw\\FiveCardDraw.csproj": {
+                "projectPath": "C:\\devbuild4\\ConsoleEscape\\FiveCardDraw\\FiveCardDraw.csproj"
               },
-              "C:\\devbuild4\\ConsoleEventSolution\\HangMan\\HangMan.csproj": {
-                "projectPath": "C:\\devbuild4\\ConsoleEventSolution\\HangMan\\HangMan.csproj"
+              "C:\\devbuild4\\ConsoleEscape\\HangMan\\HangMan.csproj": {
+                "projectPath": "C:\\devbuild4\\ConsoleEscape\\HangMan\\HangMan.csproj"
               },
-              "C:\\devbuild4\\ConsoleEventSolution\\RoShamBo\\RoShamBo.csproj": {
-                "projectPath": "C:\\devbuild4\\ConsoleEventSolution\\RoShamBo\\RoShamBo.csproj"
+              "C:\\devbuild4\\ConsoleEscape\\RoShamBo\\RoShamBo.csproj": {
+                "projectPath": "C:\\devbuild4\\ConsoleEscape\\RoShamBo\\RoShamBo.csproj"
               }
             }
           }

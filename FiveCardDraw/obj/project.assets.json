@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\devbuild4\\ConsoleEventSolution\\FiveCardDraw\\FiveCardDraw.csproj",
+      "projectUniqueName": "C:\\devbuild4\\ConsoleEscape\\FiveCardDraw\\FiveCardDraw.csproj",
       "projectName": "FiveCardDraw",
-      "projectPath": "C:\\devbuild4\\ConsoleEventSolution\\FiveCardDraw\\FiveCardDraw.csproj",
+      "projectPath": "C:\\devbuild4\\ConsoleEscape\\FiveCardDraw\\FiveCardDraw.csproj",
       "packagesPath": "C:\\Users\\callen8\\.nuget\\packages\\",
-      "outputPath": "C:\\devbuild4\\ConsoleEventSolution\\FiveCardDraw\\obj\\",
+      "outputPath": "C:\\devbuild4\\ConsoleEscape\\FiveCardDraw\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\callen8\\AppData\\Roaming\\NuGet\\NuGet.Config",

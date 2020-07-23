@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\devbuild4\\ConsoleEventSolution\\HangMan\\HangMan.csproj",
+      "projectUniqueName": "C:\\devbuild4\\ConsoleEscape\\HangMan\\HangMan.csproj",
       "projectName": "HangMan",
-      "projectPath": "C:\\devbuild4\\ConsoleEventSolution\\HangMan\\HangMan.csproj",
+      "projectPath": "C:\\devbuild4\\ConsoleEscape\\HangMan\\HangMan.csproj",
       "packagesPath": "C:\\Users\\callen8\\.nuget\\packages\\",
-      "outputPath": "C:\\devbuild4\\ConsoleEventSolution\\HangMan\\obj\\",
+      "outputPath": "C:\\devbuild4\\ConsoleEscape\\HangMan\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\callen8\\AppData\\Roaming\\NuGet\\NuGet.Config",

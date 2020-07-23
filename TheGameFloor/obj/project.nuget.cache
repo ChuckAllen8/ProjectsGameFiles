@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JgH3pVLksgStee8p1JMcM9AYZwKYNDseQaEiQKNVss5qw+Z0BEZAqzIXHSKGQzIWYbS7AtiGiHg9jgB2UvaYgw==",
+  "dgSpecHash": "1LubbKwXBbf2A6evkp/lPw1XOFKJqo1yFFGZZOQ4mPdASQur7eY9RBZ5s683uABvGiMC+RunKeBL/fLYbLcaGw==",
   "success": true,
-  "projectFilePath": "C:\\devbuild4\\ConsoleEventSolution\\TheGameFloor\\ConsoleEscape.csproj",
+  "projectFilePath": "C:\\devbuild4\\ConsoleEscape\\TheGameFloor\\ConsoleEscape.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

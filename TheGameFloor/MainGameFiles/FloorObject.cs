@@ -22,6 +22,9 @@ namespace ConsoleEscape
         public virtual void Activate(object sender, EventArgs e)
         { }
 
+        public bool Visible { get; set; } = true;
+        public bool Movable { get; set; } = false;
+
         public int X { get; set; }
         public int Y { get; set; }
         public Point Location
