@@ -1,0 +1,58 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "ConsoleEscape/1.0.0": {
+        "dependencies": {
+          "FiveCardDraw": "1.0.0",
+          "HangMan": "1.0.0",
+          "RoShamBo": "1.0.0"
+        },
+        "runtime": {
+          "ConsoleEscape.dll": {}
+        }
+      },
+      "FiveCardDraw/1.0.0": {
+        "runtime": {
+          "FiveCardDraw.dll": {}
+        }
+      },
+      "HangMan/1.0.0": {
+        "runtime": {
+          "HangMan.dll": {}
+        }
+      },
+      "RoShamBo/1.0.0": {
+        "runtime": {
+          "RoShamBo.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ConsoleEscape/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FiveCardDraw/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HangMan/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "RoShamBo/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -12,9 +12,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="AIFiles\" />
-    <Folder Include="GameFiles\" />
-    <Folder Include="PlayingCardFiles\" />
+    <Folder Include="MainGameFiles\AIFiles\" />
+    <Folder Include="MiniGameFiles\" />
+    <Folder Include="MiniGameFiles\PlayingCardFiles\" />
   </ItemGroup>
 
 </Project>

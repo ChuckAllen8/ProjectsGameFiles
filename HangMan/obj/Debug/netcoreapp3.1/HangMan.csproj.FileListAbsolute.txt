@@ -10,3 +10,4 @@ C:\devbuild4\ConsoleEventSolution\HangMan\obj\Debug\netcoreapp3.1\HangMan.csproj
 C:\devbuild4\ConsoleEventSolution\HangMan\obj\Debug\netcoreapp3.1\HangMan.dll
 C:\devbuild4\ConsoleEventSolution\HangMan\obj\Debug\netcoreapp3.1\HangMan.pdb
 C:\devbuild4\ConsoleEventSolution\HangMan\obj\Debug\netcoreapp3.1\HangMan.genruntimeconfig.cache
+C:\devbuild4\ConsoleEventSolution\HangMan\obj\Debug\netcoreapp3.1\HangMan.csprojAssemblyReference.cache
