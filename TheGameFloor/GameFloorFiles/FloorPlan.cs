@@ -62,8 +62,8 @@ namespace ConsoleEscape
             {
                 Console.Clear();
                 FloorPlan game = (FloorPlan) sender;
-                TheGameFloor.Update -= game.DisplayRoom;
-                TheGameFloor.Update += this.DisplayRoom;
+                ConsoleEscape.Update -= game.DisplayRoom;
+                ConsoleEscape.Update += this.DisplayRoom;
             }
         }
 

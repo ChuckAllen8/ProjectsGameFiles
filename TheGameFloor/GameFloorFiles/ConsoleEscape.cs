@@ -6,7 +6,7 @@ using System.Text;
 namespace ConsoleEscape
 {
     public delegate void UpdateConsoleDelegate();
-    public static class TheGameFloor
+    public static class ConsoleEscape
     {
         public const int TICKS_PER_ROUND = 250000;
         //create a game floor, fill it with games and players, and allow for
@@ -20,7 +20,7 @@ namespace ConsoleEscape
             Console.SetWindowSize(50, 25);
             Console.OutputEncoding = Encoding.Unicode;
             Console.CursorVisible = false;
-            Console.Title = "This is a game test!";
+            Console.Title = "Console Escape!";
             FloorPlan floorPlan = new FloorPlan(1, 10);
             FloorPlan room2 = new FloorPlan(13, 49);
             DateTime tickStart = DateTime.Now;
