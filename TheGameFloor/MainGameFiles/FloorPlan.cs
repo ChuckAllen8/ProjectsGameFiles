@@ -54,17 +54,11 @@ namespace ConsoleEscape
             }
         }
 
-        public event UpdateConsoleDelegate DisplayRoom;
 
         public override void Activate(object sender, EventArgs e)
         {
-            if (DisplayRoom != null)
-            {
-                Console.Clear();
-                FloorPlan game = (FloorPlan) sender;
-                ConsoleEscape.Update -= game.DisplayRoom;
-                ConsoleEscape.Update += this.DisplayRoom;
-            }
+            Console.Clear();
+            ConsoleEscape.CurrentFloor = this;
         }
 
         public void Draw()
@@ -85,15 +79,6 @@ namespace ConsoleEscape
                         toDraw = this[row, column].Symbol;
                     }
                     theLine.Append(toDraw);
-                    //this was the old draw logic
-                    //Console.SetCursorPosition(column + 1, row + 1);
-                    //Console.Write(toDraw);
-                    /* 
-                     * It has been replaced due to being slow, the new logic creates each
-                     * line and then draws the line rather than drawing each character
-                     * 1 by 1. This results in smoother input and clearer displaying
-                     * 
-                     */
                 }
                 Console.Write(theLine);
                 theLine.Clear();
@@ -139,79 +124,12 @@ namespace ConsoleEscape
                     {
                         piece.Y = Y + 1;
                     }
-                    piece.InputReceived -= UserInput;
-                    piece.InputReceived += ((FloorPlan)this[checkX, checkY]).UserInput;
                     ((FloorPlan)this[checkX, checkY]).AddPiece(piece);
                 }
                 this[checkX, checkY].Activate(this, new EventArgs());
             }
         }
 
-        public void UserInput(object user, EventArgs e)
-        {
-
-            Player piece = (Player)user;
-            List<ConsoleKey> inputs = new List<ConsoleKey>();
-
-            while (Console.KeyAvailable)
-            {
-                ConsoleKey currKey = Console.ReadKey().Key;
-                if (inputs.Contains(currKey))
-                {
-                    break;
-                }
-                inputs.Add(currKey);
-            }
-
-            //check left or right movement
-            FloorObject.Point newLocation = new FloorObject.Point(piece.X, piece.Y);
-            if (inputs.Contains(ConsoleKey.LeftArrow))
-            {
-                newLocation.Y--;
-            }
-            else if (inputs.Contains(ConsoleKey.RightArrow))
-            {
-                newLocation.Y++;
-            }
-            //check up or down movement
-            if (inputs.Contains(ConsoleKey.UpArrow))
-            {
-                newLocation.X--;
-            }
-            else if (inputs.Contains(ConsoleKey.DownArrow))
-            {
-                newLocation.X++;
-            }
-            if (!this.IsOccupied(newLocation.X, newLocation.Y))
-            {
-                this[piece.X, piece.Y] = null;
-                this[newLocation.X, newLocation.Y] = piece;
-                piece.Location = newLocation;
-            }
-            else if (newLocation.X < floorPlan.GetLength(0) && newLocation.Y < floorPlan.GetLength(1) && this[newLocation.X, newLocation.Y] != null && this[newLocation.X, newLocation.Y].Movable)
-            {
-                FloorObject movablePiece = (FloorObject) this[newLocation.X, newLocation.Y];
-                int tempX = movablePiece.X + (newLocation.X - piece.X);
-                int tempY = movablePiece.Y + (newLocation.Y - piece.Y);
-                if(tempX < floorPlan.GetLength(0) && tempY < floorPlan.GetLength(1) && !this.IsOccupied(tempX, tempY))
-                {
-                    this[piece.X, piece.Y] = null;
-                    this[newLocation.X, newLocation.Y] = piece;
-                    this[tempX, tempY] = movablePiece;
-                    movablePiece.Location = new Point(tempX, tempY);
-                    piece.Location = newLocation;
-                }
-            }
-
-            if (inputs.Contains(ConsoleKey.Enter))
-            {
-                int tempX = piece.X;
-                int tempY = piece.Y;
-                UserActivated(piece, tempX + 1, tempY);
-                UserActivated(piece, tempX - 1, tempY);
-                UserActivated(piece, tempX, tempY + 1);
-                UserActivated(piece, tempX, tempY - 1);
-            }
-        }
+        
     }
 }

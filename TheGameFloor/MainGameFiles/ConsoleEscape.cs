@@ -1,18 +1,36 @@
-﻿using System;
+﻿using ConsoleEscape.MainGameFiles;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
 
 namespace ConsoleEscape
 {
-    public delegate void UpdateConsoleDelegate();
+
     public static class ConsoleEscape
     {
         public const int TICKS_PER_ROUND = 250000;
         //create a game floor, fill it with games and players, and allow for
         //the user to walk around and select different games to play
 
-        public static event UpdateConsoleDelegate Update;
+        /* 
+         * 
+         * If I move the current floor info to the User and give it an
+         * input and output stream, I could iterate over all users
+         * and have each one on a separate map, that can then be drawn
+         * to their screen.
+         * 
+         * I can also store a dictionary of maps, with <mapID,mapObj>
+         * here that when the user switches map or gets added it all
+         * uses the same object so two players could be on the same map
+         * at the same time.
+         * 
+         * 
+         */
+
+        
+        public static FloorPlan CurrentFloor
+        { get; set; }
 
         public static void Run()
         {
@@ -21,25 +39,26 @@ namespace ConsoleEscape
             Console.OutputEncoding = Encoding.Unicode;
             Console.CursorVisible = false;
             Console.Title = "Console Escape!";
+
             FloorPlan floorPlan = new FloorPlan(1, 10);
             FloorPlan room2 = new FloorPlan(13, 49);
+
+            Controller controller1 = new Controller();
+
+            Player user = new Player(1, 1, 'C');
+            user.InputReceived += controller1.UserInput;
+
             DateTime tickStart = DateTime.Now;
             DateTime now = DateTime.Now;
 
             SetMap(floorPlan, Environment.CurrentDirectory + @"\MapFiles\MainMap\");
             SetMap(room2, Environment.CurrentDirectory + @"\MapFiles\SideMap\");
 
-            room2.DisplayRoom += room2.Draw;
-            floorPlan.DisplayRoom += floorPlan.Draw;
-            Update += floorPlan.Draw;
-
             room2.AddPiece(floorPlan);
             floorPlan.AddPiece(room2);
-
-            Player user = new Player(1, 1, 'C');
-            user.InputReceived += floorPlan.UserInput;
-
             floorPlan.AddPiece(user);
+
+            CurrentFloor = floorPlan;
 
             while (user.X < Console.WindowHeight)
             {
@@ -51,7 +70,8 @@ namespace ConsoleEscape
                     tickStart = DateTime.Now;
                     user.Listen();
                 }
-                Update?.Invoke();
+                //Update?.Invoke();
+                CurrentFloor.Draw();
             }
         }
 
