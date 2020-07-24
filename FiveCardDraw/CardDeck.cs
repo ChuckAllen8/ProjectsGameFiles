@@ -57,47 +57,20 @@ namespace FiveCardDraw
 
         private void CutCards(int sizeSideOne)
         {
-            List<Card> firstHalf = new List<Card>();
-            List<Card> secondHalf = new List<Card>();
+            Queue<Card> firstHalf = new Queue<Card>();
+            Queue<Card> secondHalf = new Queue<Card>();
 
             for (int index = 0; index < sizeSideOne; index++)
             {
-                firstHalf.Add(cards[index]);
+                firstHalf.Enqueue(cards[index]);
             }
             for (int index = sizeSideOne; index < cards.Count; index++)
             {
-                secondHalf.Add(cards[index]);
+                secondHalf.Enqueue(cards[index]);
             }
             if (sizeSideOne < 26)
             {
-                MergeCards(secondHalf, firstHalf);
-            }
-            else
-            {
-                MergeCards(firstHalf, secondHalf);
-            }
-        }
-
-        private void CutMiddle(bool flip)
-        {
-            List<Card> firstHalf = new List<Card>();
-            List<Card> secondHalf = new List<Card>();
-
-            for (int index = 0; index < 10; index++)
-            {
-                firstHalf.Add(cards[index]);
-            }
-            for (int index = 10; index < 35; index++)
-            {
-                secondHalf.Add(cards[index]);
-            }
-            for (int index = 35; index < cards.Count; index++)
-            {
-                firstHalf.Add(cards[index]);
-            }
-            if (flip)
-            {
-                MergeCards(secondHalf, firstHalf, true);
+                MergeCards(secondHalf, firstHalf, false);
             }
             else
             {
@@ -105,40 +78,54 @@ namespace FiveCardDraw
             }
         }
 
-        private void MergeCards(List<Card> part1, List<Card> part2)
+        private void CutMiddle(bool flip)
         {
-            List<Card> newDeck = new List<Card>();
-            for (int cardNum = 0; cardNum < cards.Count; cardNum++)
+            Queue<Card> firstHalf = new Queue<Card>();
+            Queue<Card> secondHalf = new Queue<Card>();
+
+            for (int index = 0; index < 10; index++)
             {
-                try
-                {
-                    newDeck.Add(part1[cardNum]);
-                }
-                catch { }
-                try
-                {
-                    newDeck.Add(part2[cardNum]);
-                }
-                catch { }
+                firstHalf.Enqueue(cards[index]);
             }
-            cards = newDeck;
+            for (int index = 10; index < 35; index++)
+            {
+                secondHalf.Enqueue(cards[index]);
+            }
+            for (int index = 35; index < cards.Count; index++)
+            {
+                firstHalf.Enqueue(cards[index]);
+            }
+
+            MergeCards(secondHalf, firstHalf, flip);  
         }
 
-        private void MergeCards(List<Card> part1, List<Card> part2, bool reverse)
+        private void MergeCards(Queue<Card> part1, Queue<Card> part2, bool reverse)
         {
             List<Card> newDeck = new List<Card>();
-            for (int cardNum = 0; cardNum < cards.Count; cardNum++)
+            while (part1.Count > 0 || part2.Count > 0)
             {
-                try
+                if (!reverse)
                 {
-                    newDeck.Add(part1[part1.Count - 1 - cardNum]);
+                    if (part1.TryDequeue(out Card one))
+                    {
+                        newDeck.Add(one);
+                    }
+                    if (part2.TryDequeue(out Card two))
+                    {
+                        newDeck.Add(two);
+                    }
                 }
-                catch { }
-                try
+                else
                 {
-                    newDeck.Add(part2[part2.Count - 1 - cardNum]);
+                    if (part2.TryDequeue(out Card one))
+                    {
+                        newDeck.Add(one);
+                    }
+                    if (part1.TryDequeue(out Card two))
+                    {
+                        newDeck.Add(two);
+                    }
                 }
-                catch { }
             }
             cards = newDeck;
         }

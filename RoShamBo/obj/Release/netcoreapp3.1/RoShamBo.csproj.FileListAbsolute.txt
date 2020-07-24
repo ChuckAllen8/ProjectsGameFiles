@@ -11,3 +11,16 @@ C:\devbuild4\ConsoleEventSolution\RoShamBo\obj\Release\netcoreapp3.1\RoShamBo.cs
 C:\devbuild4\ConsoleEventSolution\RoShamBo\obj\Release\netcoreapp3.1\RoShamBo.dll
 C:\devbuild4\ConsoleEventSolution\RoShamBo\obj\Release\netcoreapp3.1\RoShamBo.pdb
 C:\devbuild4\ConsoleEventSolution\RoShamBo\obj\Release\netcoreapp3.1\RoShamBo.genruntimeconfig.cache
+C:\devbuild4\ConsoleEscape\RoShamBo\bin\Release\netcoreapp3.1\RoShamBo.exe
+C:\devbuild4\ConsoleEscape\RoShamBo\bin\Release\netcoreapp3.1\RoShamBo.deps.json
+C:\devbuild4\ConsoleEscape\RoShamBo\bin\Release\netcoreapp3.1\RoShamBo.runtimeconfig.json
+C:\devbuild4\ConsoleEscape\RoShamBo\bin\Release\netcoreapp3.1\RoShamBo.runtimeconfig.dev.json
+C:\devbuild4\ConsoleEscape\RoShamBo\bin\Release\netcoreapp3.1\RoShamBo.dll
+C:\devbuild4\ConsoleEscape\RoShamBo\bin\Release\netcoreapp3.1\RoShamBo.pdb
+C:\devbuild4\ConsoleEscape\RoShamBo\obj\Release\netcoreapp3.1\RoShamBo.csprojAssemblyReference.cache
+C:\devbuild4\ConsoleEscape\RoShamBo\obj\Release\netcoreapp3.1\RoShamBo.AssemblyInfoInputs.cache
+C:\devbuild4\ConsoleEscape\RoShamBo\obj\Release\netcoreapp3.1\RoShamBo.AssemblyInfo.cs
+C:\devbuild4\ConsoleEscape\RoShamBo\obj\Release\netcoreapp3.1\RoShamBo.csproj.CoreCompileInputs.cache
+C:\devbuild4\ConsoleEscape\RoShamBo\obj\Release\netcoreapp3.1\RoShamBo.dll
+C:\devbuild4\ConsoleEscape\RoShamBo\obj\Release\netcoreapp3.1\RoShamBo.pdb
+C:\devbuild4\ConsoleEscape\RoShamBo\obj\Release\netcoreapp3.1\RoShamBo.genruntimeconfig.cache

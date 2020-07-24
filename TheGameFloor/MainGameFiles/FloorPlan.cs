@@ -188,7 +188,7 @@ namespace ConsoleEscape
                 this[newLocation.X, newLocation.Y] = piece;
                 piece.Location = newLocation;
             }
-            else if (this[newLocation.X, newLocation.Y] != null && this[newLocation.X, newLocation.Y].Movable)
+            else if (newLocation.X < floorPlan.GetLength(0) && newLocation.Y < floorPlan.GetLength(1) && this[newLocation.X, newLocation.Y] != null && this[newLocation.X, newLocation.Y].Movable)
             {
                 FloorObject movablePiece = (FloorObject) this[newLocation.X, newLocation.Y];
                 int tempX = movablePiece.X + (newLocation.X - piece.X);
