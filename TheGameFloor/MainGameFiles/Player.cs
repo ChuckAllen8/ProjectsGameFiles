@@ -2,11 +2,10 @@
 
 namespace ConsoleEscape
 {
-    public delegate void InputReceivedDelegate(object sender, EventArgs args);
     public class Player : FloorObject
     {
         //base class for all players, user or AI
-        public event InputReceivedDelegate InputReceived;
+        public event EventHandler<EventArgs> InputReceived;
 
         public Player(int x, int y, char symbol)
         {

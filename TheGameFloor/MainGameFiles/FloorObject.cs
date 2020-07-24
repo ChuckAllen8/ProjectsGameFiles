@@ -38,6 +38,6 @@ namespace ConsoleEscape
                 Y = value.Y;
             }
         }
-        public char Symbol { get; set; }
+        public virtual char Symbol { get; set; }
     }
 }

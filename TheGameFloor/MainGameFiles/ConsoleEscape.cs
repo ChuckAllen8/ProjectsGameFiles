@@ -36,7 +36,7 @@ namespace ConsoleEscape
         {
             Console.Clear();
             Console.SetWindowSize(50, 25);
-            Console.OutputEncoding = Encoding.Unicode;
+            Console.OutputEncoding = Encoding.UTF8;
             Console.CursorVisible = false;
             Console.Title = "Console Escape!";
 
@@ -54,8 +54,19 @@ namespace ConsoleEscape
             SetMap(floorPlan, Environment.CurrentDirectory + @"\MapFiles\MainMap\");
             SetMap(room2, Environment.CurrentDirectory + @"\MapFiles\SideMap\");
 
-            room2.AddPiece(floorPlan);
-            floorPlan.AddPiece(room2);
+            
+            //testing doors, added a door on each side to go to the opposite side of the other room
+            FloorDoor firstDoor = new FloorDoor(floorPlan, room2, 0, 10, room2.Rows - 1, 10);
+            FloorDoor secondDoor = new FloorDoor(floorPlan, room2, floorPlan.Rows-1, 10, 0, 10);
+            FloorDoor thirdDoor = new FloorDoor(floorPlan, room2, 10, floorPlan.Columns - 1, 10, 0);
+            FloorDoor fourthDoor = new FloorDoor(floorPlan, room2, 10, 0, 10, room2.Columns - 1);
+
+            floorPlan.WallIn();
+            room2.WallIn();
+
+            firstDoor.Visible = false;
+            secondDoor.Visible = false;
+
             floorPlan.AddPiece(user);
 
             CurrentFloor = floorPlan;

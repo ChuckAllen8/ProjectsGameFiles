@@ -5,7 +5,6 @@ using System.Text;
 
 namespace ConsoleEscape
 {
-    public delegate void ObjectMovedDelegate(object sender, EventArgs args);
 
 
     public class FloorPlan : FloorObject
@@ -13,7 +12,7 @@ namespace ConsoleEscape
         //this will be the map of where everything is on the game floor.
 
         private FloorObject[,] floorPlan;
-        public event ObjectMovedDelegate ObjectMoved;
+        public event EventHandler<EventArgs> ObjectMoved;
         public List<Player> miniGamePlayers;
 
         public FloorPlan(int x, int y)
@@ -54,11 +53,30 @@ namespace ConsoleEscape
             }
         }
 
-
-        public override void Activate(object sender, EventArgs e)
+        public void WallIn()
         {
-            Console.Clear();
-            ConsoleEscape.CurrentFloor = this;
+            for (int row = 0; row < Rows; row++)
+            {
+                if(this[row, 0] == null)
+                {
+                    this[row, 0] = new FloorWall();
+                }
+                if(this[row, Columns - 1] == null)
+                {
+                    this[row, Columns - 1] = new FloorWall();
+                }
+            }
+            for (int column = 0; column < Columns; column++)
+            {
+                if (this[0, column] == null)
+                {
+                    this[0, column] = new FloorWall();
+                }
+                if (this[Rows-1, column] == null)
+                {
+                    this[Rows-1, column] = new FloorWall();
+                }
+            }
         }
 
         public void Draw()
@@ -74,7 +92,7 @@ namespace ConsoleEscape
                 for (int column = 0; column < Columns; column++)
                 {
                     char toDraw = ' ';
-                    if (this[row, column] != null && this[row, column].Visible)
+                    if (this[row, column] != null)
                     {
                         toDraw = this[row, column].Symbol;
                     }
@@ -105,26 +123,21 @@ namespace ConsoleEscape
         {
             if (checkX >= 0 && checkX < Rows && checkY >= 0 && checkY < Columns && this.IsOccupied(checkX, checkY) && this[checkX, checkY] != null)
             {
-                if (this[checkX, checkY].GetType() == typeof(FloorPlan))
+                if (this[checkX, checkY].GetType() == typeof(FloorDoor))
                 {
+                    FloorDoor inbetween = ((FloorDoor)this[checkX, checkY]);
                     RemovePiece(piece);
-                    if(X + 1 >= Rows)
+                    if(inbetween.Side1 == this)
                     {
-                        piece.X = X - 1;
+                        piece.Location = inbetween.ExitSide2;
+                        inbetween.Side2.AddPiece(piece);
                     }
                     else
                     {
-                        piece.X = X + 1;
+                        piece.Location = inbetween.ExitSide1;
+                        inbetween.Side1.AddPiece(piece);
                     }
-                    if(Y + 1 >= Columns)
-                    {
-                        piece.Y = Y - 1;
-                    }
-                    else
-                    {
-                        piece.Y = Y + 1;
-                    }
-                    ((FloorPlan)this[checkX, checkY]).AddPiece(piece);
+                    
                 }
                 this[checkX, checkY].Activate(this, new EventArgs());
             }
